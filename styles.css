@@ -66,3 +66,27 @@ footer { border-top: 1px solid var(--forest); font-size: 1rem; }
   .welcome > img { width: 45%; }
   .section-row, .class-list { flex-direction: row; }
 }
+/* Class details and form feedback */
+.class-details {
+  padding: 1rem;
+  background-color: #DCE6DA;
+  border-left: 4px solid #285447;
+}
+
+.field-error {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #24352F;
+}
+
+input.invalid,
+select.invalid,
+textarea.invalid {
+  border: 3px solid #24352F;
+}
+
+.form-status:not(:empty) {
+  padding: 1rem;
+  background-color: #DCE6DA;
+  font-weight: bold;
+}
