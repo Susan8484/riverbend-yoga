@@ -1,0 +1,68 @@
+/* Riverbend Yoga Studio — shared mobile-first design */
+:root {
+  --cream: #F7F4EC;
+  --sage: #DCE6DA;
+  --forest: #285447;
+  --ink: #24352F;
+  --space-sm: .75rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--cream); color: var(--ink); font-family: Arial, sans-serif; font-size: 1.125rem; line-height: 1.65; }
+a { color: var(--forest); text-underline-offset: .2em; }
+a:hover { text-decoration-thickness: .15em; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid var(--forest); outline-offset: 4px; }
+.skip-link { display: block; padding: .4rem 1rem; font-size: .9rem; }
+header, main, footer { max-width: 72rem; margin-inline: auto; padding: var(--space-md); }
+header { display: flex; flex-direction: column; gap: var(--space-sm); border-bottom: 1px solid var(--forest); }
+.studio-name { font-family: Georgia, serif; font-size: 1.6rem; font-weight: bold; margin: 0; }
+nav ul { display: flex; flex-wrap: wrap; gap: .4rem; list-style: none; margin: 0; padding: 0; }
+nav a { display: block; padding: .6rem .8rem; border-radius: .25rem; text-decoration: none; }
+nav a:hover { background: var(--sage); }
+nav a[aria-current="page"] { background: var(--forest); color: var(--cream); text-decoration: underline; }
+h1, h2, h3 { font-family: Georgia, serif; line-height: 1.2; }
+h1 { font-size: 2.25rem; max-width: 24ch; margin: 1rem 0 2rem; }
+h2 { font-size: 1.75rem; margin: 0 0 1rem; }
+h3 { font-size: 1.3rem; margin: 1.5rem 0 .6rem; }
+p { max-width: 65ch; margin: 0 0 1rem; }
+section { margin-bottom: var(--space-lg); }
+img { display: block; max-width: 100%; height: auto; border-radius: .5rem; margin-block: 1rem; }
+picture { display: block; }
+picture img { width: 100%; max-width: 28rem; }
+.welcome { display: flex; flex-direction: column; gap: var(--space-md); background: var(--sage); padding: var(--space-md); border-radius: .5rem; }
+.welcome-copy, .welcome > img { min-width: 0; }
+.welcome > img { width: 100%; object-fit: contain; margin: 0; }
+.section-row, .class-list { display: flex; flex-direction: column; gap: var(--space-md); }
+.section-row > section, .class-list > article { min-width: 0; flex: 1; }
+.class-list > article { border-top: 2px solid var(--forest); }
+.section-row > section { padding: var(--space-md); background: var(--sage); border-radius: .5rem; }
+ul { padding-left: 1.4rem; }
+li { margin-bottom: .5rem; }
+nav li { margin: 0; }
+dt { font-weight: bold; }
+dd { margin: 0 0 1rem; }
+figure { margin: 1.5rem 0; }
+figcaption { max-width: 65ch; font-size: 1rem; }
+audio { width: 100%; max-width: 28rem; }
+form { max-width: 44rem; }
+fieldset { min-width: 0; border: 1px solid var(--forest); border-radius: .4rem; padding: var(--space-md); margin: 0 0 var(--space-md); }
+legend { font-weight: bold; padding: 0 .3rem; max-width: 100%; }
+label { display: block; font-weight: bold; margin-bottom: .35rem; }
+input, select, textarea, button { font: inherit; }
+input:not([type="radio"]), select, textarea { display: block; width: 100%; min-width: 0; padding: .7rem; color: var(--ink); background: var(--cream); border: 1px solid var(--forest); border-radius: .25rem; }
+textarea { resize: vertical; }
+input[type="radio"] { width: 1.2rem; height: 1.2rem; accent-color: var(--forest); }
+input[type="radio"] + label { display: inline-block; padding: .4rem; }
+.button-link, button { display: inline-block; background: var(--forest); color: var(--cream); border: 2px solid var(--forest); border-radius: .25rem; padding: .7rem 1rem; font-weight: bold; text-decoration: none; cursor: pointer; }
+.button-link:hover, button:hover { background: var(--ink); }
+footer { border-top: 1px solid var(--forest); font-size: 1rem; }
+@media (min-width: 48rem) {
+  header { flex-direction: row; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+  header, main, footer { padding: var(--space-lg); }
+  h1 { font-size: 3.25rem; }
+  .welcome { flex-direction: row; align-items: center; padding: var(--space-lg); }
+  .welcome-copy { flex: 1; }
+  .welcome > img { width: 45%; }
+  .section-row, .class-list { flex-direction: row; }
+}
